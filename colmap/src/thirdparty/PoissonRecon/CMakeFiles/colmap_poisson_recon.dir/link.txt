@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcolmap_poisson_recon.a  CMakeFiles/colmap_poisson_recon.dir/CmdLineParser.cpp.o CMakeFiles/colmap_poisson_recon.dir/Factor.cpp.o CMakeFiles/colmap_poisson_recon.dir/Geometry.cpp.o CMakeFiles/colmap_poisson_recon.dir/MarchingCubes.cpp.o CMakeFiles/colmap_poisson_recon.dir/PlyFile.cpp.o CMakeFiles/colmap_poisson_recon.dir/PoissonRecon.cpp.o CMakeFiles/colmap_poisson_recon.dir/SurfaceTrimmer.cpp.o
+/usr/bin/ranlib libcolmap_poisson_recon.a

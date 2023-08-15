@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/autodl-tmp/colmap/src/thirdparty/SiftGPU/CuTexImage.h
+cuda_runtime.h
+-
+
+/root/autodl-tmp/colmap/src/thirdparty/SiftGPU/GlobalUtil.h
+
+/root/autodl-tmp/colmap/src/thirdparty/SiftGPU/ProgramCU.cu
+GL/glew.h
+/root/autodl-tmp/colmap/src/thirdparty/SiftGPU/GL/glew.h
+stdio.h
+/root/autodl-tmp/colmap/src/thirdparty/SiftGPU/stdio.h
+CuTexImage.h
+/root/autodl-tmp/colmap/src/thirdparty/SiftGPU/CuTexImage.h
+ProgramCU.h
+/root/autodl-tmp/colmap/src/thirdparty/SiftGPU/ProgramCU.h
+GlobalUtil.h
+/root/autodl-tmp/colmap/src/thirdparty/SiftGPU/GlobalUtil.h
+
+/root/autodl-tmp/colmap/src/thirdparty/SiftGPU/ProgramCU.h
+

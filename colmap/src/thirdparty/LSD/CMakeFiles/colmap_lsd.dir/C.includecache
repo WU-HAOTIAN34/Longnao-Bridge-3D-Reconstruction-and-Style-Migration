@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/autodl-tmp/colmap/src/thirdparty/LSD/lsd.c
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+limits.h
+-
+float.h
+-
+lsd.h
+/root/autodl-tmp/colmap/src/thirdparty/LSD/lsd.h
+
+/root/autodl-tmp/colmap/src/thirdparty/LSD/lsd.h
+

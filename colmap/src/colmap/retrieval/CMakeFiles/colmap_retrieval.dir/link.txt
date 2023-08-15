@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcolmap_retrieval.a  CMakeFiles/colmap_retrieval.dir/geometry.cc.o CMakeFiles/colmap_retrieval.dir/vote_and_verify.cc.o
+/usr/bin/ranlib libcolmap_retrieval.a

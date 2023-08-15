@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcolmap_sensor.a  CMakeFiles/colmap_sensor.dir/bitmap.cc.o CMakeFiles/colmap_sensor.dir/database.cc.o CMakeFiles/colmap_sensor.dir/models.cc.o CMakeFiles/colmap_sensor.dir/specs.cc.o
+/usr/bin/ranlib libcolmap_sensor.a

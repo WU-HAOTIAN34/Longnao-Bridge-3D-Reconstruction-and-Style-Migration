@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcolmap_optim.a  CMakeFiles/colmap_optim.dir/combination_sampler.cc.o CMakeFiles/colmap_optim.dir/least_absolute_deviations.cc.o CMakeFiles/colmap_optim.dir/progressive_sampler.cc.o CMakeFiles/colmap_optim.dir/random_sampler.cc.o CMakeFiles/colmap_optim.dir/sprt.cc.o CMakeFiles/colmap_optim.dir/support_measurement.cc.o
+/usr/bin/ranlib libcolmap_optim.a

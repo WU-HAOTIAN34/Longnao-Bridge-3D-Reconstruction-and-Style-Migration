@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcolmap_image.a  CMakeFiles/colmap_image.dir/line.cc.o CMakeFiles/colmap_image.dir/undistortion.cc.o CMakeFiles/colmap_image.dir/warp.cc.o
+/usr/bin/ranlib libcolmap_image.a

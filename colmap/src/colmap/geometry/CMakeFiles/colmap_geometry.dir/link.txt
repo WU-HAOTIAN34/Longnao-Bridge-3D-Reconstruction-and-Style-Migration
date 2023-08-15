@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcolmap_geometry.a  CMakeFiles/colmap_geometry.dir/essential_matrix.cc.o CMakeFiles/colmap_geometry.dir/gps.cc.o CMakeFiles/colmap_geometry.dir/homography_matrix.cc.o CMakeFiles/colmap_geometry.dir/pose.cc.o CMakeFiles/colmap_geometry.dir/sim3.cc.o CMakeFiles/colmap_geometry.dir/triangulation.cc.o
+/usr/bin/ranlib libcolmap_geometry.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcolmap_sfm.a  CMakeFiles/colmap_sfm.dir/incremental_mapper.cc.o CMakeFiles/colmap_sfm.dir/incremental_triangulator.cc.o
+/usr/bin/ranlib libcolmap_sfm.a

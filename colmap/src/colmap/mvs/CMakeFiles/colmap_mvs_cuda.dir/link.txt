@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcolmap_mvs_cuda.a  CMakeFiles/colmap_mvs_cuda.dir/gpu_mat_prng.cu.o CMakeFiles/colmap_mvs_cuda.dir/gpu_mat_ref_image.cu.o CMakeFiles/colmap_mvs_cuda.dir/patch_match.cc.o CMakeFiles/colmap_mvs_cuda.dir/patch_match_cuda.cu.o
+/usr/bin/ranlib libcolmap_mvs_cuda.a

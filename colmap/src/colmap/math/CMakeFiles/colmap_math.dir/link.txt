@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcolmap_math.a  CMakeFiles/colmap_math.dir/graph_cut.cc.o CMakeFiles/colmap_math.dir/math.cc.o CMakeFiles/colmap_math.dir/polynomial.cc.o CMakeFiles/colmap_math.dir/random.cc.o
+/usr/bin/ranlib libcolmap_math.a

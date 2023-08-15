@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcolmap_lsd.a  CMakeFiles/colmap_lsd.dir/lsd.c.o
+/usr/bin/ranlib libcolmap_lsd.a
