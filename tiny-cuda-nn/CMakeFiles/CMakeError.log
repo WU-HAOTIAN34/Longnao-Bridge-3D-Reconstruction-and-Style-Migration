@@ -1,0 +1,166 @@
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" failed.
+Compiler: /usr/bin/nvcc 
+Build flags: 
+Id flags: --keep;--keep-dir;tmp -v
+
+The output was:
+255
+#$ _SPACE_= 
+#$ _CUDART_=cudart
+#$ _HERE_=/usr/lib/nvidia-cuda-toolkit/bin
+#$ _THERE_=/usr/lib/nvidia-cuda-toolkit/bin
+#$ _TARGET_SIZE_=
+#$ _TARGET_DIR_=
+#$ _TARGET_SIZE_=64
+#$ NVVMIR_LIBRARY_DIR=/usr/lib/nvidia-cuda-toolkit/libdevice
+#$ PATH=/usr/lib/nvidia-cuda-toolkit/bin:/root/miniconda3/envs/nerfstudio/bin:/usr/local/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+#$ LIBRARIES=  -L/usr/lib/x86_64-linux-gnu/stubs -L/usr/lib/x86_64-linux-gnu
+#$ rm tmp/a_dlink.reg.c
+#$ gcc -D__CUDA_ARCH__=300 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__   -D__CUDACC_VER_MAJOR__=10 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=243 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" > "tmp/CMakeCUDACompilerId.cpp1.ii" 
+#$ cicc --c++14 --gnu_version=90400 --allow_managed  -arch compute_30 -m64 -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused -nvvmir-library "/usr/lib/nvidia-cuda-toolkit/libdevice/libdevice.10.bc" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --orig_src_file_name "CMakeCUDACompilerId.cu" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"
+#$ ptxas -arch=sm_30 -m64 "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_30.cubin" 
+ptxas fatal   : Value 'sm_30' is not defined for option 'gpu-name'
+# --error 0xff --
+
+
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" failed.
+Compiler: /usr/bin/nvcc 
+Build flags: 
+Id flags: --cuda-gpu-arch=sm_20 -v
+
+The output was:
+1
+nvcc fatal   : Unknown option '-cuda-gpu-arch'
+
+
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" failed.
+Compiler: /usr/bin/nvcc 
+Build flags: 
+Id flags: --cuda-gpu-arch=sm_30 -v
+
+The output was:
+1
+nvcc fatal   : Unknown option '-cuda-gpu-arch'
+
+
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" failed.
+Compiler: /usr/bin/nvcc 
+Build flags: 
+Id flags: --cuda-gpu-arch=sm_52 -v
+
+The output was:
+1
+nvcc fatal   : Unknown option '-cuda-gpu-arch'
+
+
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" failed.
+Compiler: /usr/bin/nvcc 
+Build flags: 
+Id flags:  -v
+
+The output was:
+255
+#$ _SPACE_= 
+#$ _CUDART_=cudart
+#$ _HERE_=/usr/lib/nvidia-cuda-toolkit/bin
+#$ _THERE_=/usr/lib/nvidia-cuda-toolkit/bin
+#$ _TARGET_SIZE_=
+#$ _TARGET_DIR_=
+#$ _TARGET_SIZE_=64
+#$ NVVMIR_LIBRARY_DIR=/usr/lib/nvidia-cuda-toolkit/libdevice
+#$ PATH=/usr/lib/nvidia-cuda-toolkit/bin:/root/miniconda3/envs/nerfstudio/bin:/usr/local/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+#$ LIBRARIES=  -L/usr/lib/x86_64-linux-gnu/stubs -L/usr/lib/x86_64-linux-gnu
+#$ gcc -D__CUDA_ARCH__=300 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__   -D__CUDACC_VER_MAJOR__=10 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=243 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" > "/tmp/tmpxft_00001c48_00000000-8_CMakeCUDACompilerId.cpp1.ii" 
+#$ cicc --c++14 --gnu_version=90400 --allow_managed  -arch compute_30 -m64 -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00001c48_00000000-2_CMakeCUDACompilerId.fatbin.c" -tused -nvvmir-library "/usr/lib/nvidia-cuda-toolkit/libdevice/libdevice.10.bc" --gen_module_id_file --module_id_file_name "/tmp/tmpxft_00001c48_00000000-3_CMakeCUDACompilerId.module_id" --orig_src_file_name "CMakeCUDACompilerId.cu" --gen_c_file_name "/tmp/tmpxft_00001c48_00000000-5_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "/tmp/tmpxft_00001c48_00000000-5_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "/tmp/tmpxft_00001c48_00000000-5_CMakeCUDACompilerId.cudafe1.gpu"  "/tmp/tmpxft_00001c48_00000000-8_CMakeCUDACompilerId.cpp1.ii" -o "/tmp/tmpxft_00001c48_00000000-5_CMakeCUDACompilerId.ptx"
+#$ ptxas -arch=sm_30 -m64 "/tmp/tmpxft_00001c48_00000000-5_CMakeCUDACompilerId.ptx"  -o "/tmp/tmpxft_00001c48_00000000-9_CMakeCUDACompilerId.sm_30.cubin" 
+ptxas fatal   : Value 'sm_30' is not defined for option 'gpu-name'
+# --error 0xff --
+
+
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" failed.
+Compiler: /usr/bin/nvcc 
+Build flags: 
+Id flags: --keep;--keep-dir;tmp -v
+
+The output was:
+255
+#$ _SPACE_= 
+#$ _CUDART_=cudart
+#$ _HERE_=/usr/lib/nvidia-cuda-toolkit/bin
+#$ _THERE_=/usr/lib/nvidia-cuda-toolkit/bin
+#$ _TARGET_SIZE_=
+#$ _TARGET_DIR_=
+#$ _TARGET_SIZE_=64
+#$ NVVMIR_LIBRARY_DIR=/usr/lib/nvidia-cuda-toolkit/libdevice
+#$ PATH=/usr/lib/nvidia-cuda-toolkit/bin:/root/miniconda3/envs/nerfstudio/bin:/usr/local/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+#$ LIBRARIES=  -L/usr/lib/x86_64-linux-gnu/stubs -L/usr/lib/x86_64-linux-gnu
+#$ rm tmp/a_dlink.reg.c
+#$ gcc -D__CUDA_ARCH__=300 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__   -D__CUDACC_VER_MAJOR__=10 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=243 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" > "tmp/CMakeCUDACompilerId.cpp1.ii" 
+#$ cicc --c++14 --gnu_version=90400 --allow_managed  -arch compute_30 -m64 -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused -nvvmir-library "/usr/lib/nvidia-cuda-toolkit/libdevice/libdevice.10.bc" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --orig_src_file_name "CMakeCUDACompilerId.cu" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"
+#$ ptxas -arch=sm_30 -m64 "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_30.cubin" 
+ptxas fatal   : Value 'sm_30' is not defined for option 'gpu-name'
+# --error 0xff --
+
+
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" failed.
+Compiler: /usr/bin/nvcc 
+Build flags: 
+Id flags: --cuda-gpu-arch=sm_20 -v
+
+The output was:
+1
+nvcc fatal   : Unknown option '-cuda-gpu-arch'
+
+
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" failed.
+Compiler: /usr/bin/nvcc 
+Build flags: 
+Id flags: --cuda-gpu-arch=sm_30 -v
+
+The output was:
+1
+nvcc fatal   : Unknown option '-cuda-gpu-arch'
+
+
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" failed.
+Compiler: /usr/bin/nvcc 
+Build flags: 
+Id flags: --cuda-gpu-arch=sm_52 -v
+
+The output was:
+1
+nvcc fatal   : Unknown option '-cuda-gpu-arch'
+
+
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" failed.
+Compiler: /usr/bin/nvcc 
+Build flags: 
+Id flags:  -v
+
+The output was:
+255
+#$ _SPACE_= 
+#$ _CUDART_=cudart
+#$ _HERE_=/usr/lib/nvidia-cuda-toolkit/bin
+#$ _THERE_=/usr/lib/nvidia-cuda-toolkit/bin
+#$ _TARGET_SIZE_=
+#$ _TARGET_DIR_=
+#$ _TARGET_SIZE_=64
+#$ NVVMIR_LIBRARY_DIR=/usr/lib/nvidia-cuda-toolkit/libdevice
+#$ PATH=/usr/lib/nvidia-cuda-toolkit/bin:/root/miniconda3/envs/nerfstudio/bin:/usr/local/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+#$ LIBRARIES=  -L/usr/lib/x86_64-linux-gnu/stubs -L/usr/lib/x86_64-linux-gnu
+#$ gcc -D__CUDA_ARCH__=300 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__   -D__CUDACC_VER_MAJOR__=10 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=243 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" > "/tmp/tmpxft_00001c61_00000000-8_CMakeCUDACompilerId.cpp1.ii" 
+#$ cicc --c++14 --gnu_version=90400 --allow_managed  -arch compute_30 -m64 -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00001c61_00000000-2_CMakeCUDACompilerId.fatbin.c" -tused -nvvmir-library "/usr/lib/nvidia-cuda-toolkit/libdevice/libdevice.10.bc" --gen_module_id_file --module_id_file_name "/tmp/tmpxft_00001c61_00000000-3_CMakeCUDACompilerId.module_id" --orig_src_file_name "CMakeCUDACompilerId.cu" --gen_c_file_name "/tmp/tmpxft_00001c61_00000000-5_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "/tmp/tmpxft_00001c61_00000000-5_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "/tmp/tmpxft_00001c61_00000000-5_CMakeCUDACompilerId.cudafe1.gpu"  "/tmp/tmpxft_00001c61_00000000-8_CMakeCUDACompilerId.cpp1.ii" -o "/tmp/tmpxft_00001c61_00000000-5_CMakeCUDACompilerId.ptx"
+#$ ptxas -arch=sm_30 -m64 "/tmp/tmpxft_00001c61_00000000-5_CMakeCUDACompilerId.ptx"  -o "/tmp/tmpxft_00001c61_00000000-9_CMakeCUDACompilerId.sm_30.cubin" 
+ptxas fatal   : Value 'sm_30' is not defined for option 'gpu-name'
+# --error 0xff --
+
+
+Checking whether the CUDA compiler is NVIDIA using "" did not match "nvcc: NVIDIA \(R\) Cuda compiler driver":
+nvcc fatal   : No input files specified; use option --help for more information
+Checking whether the CUDA compiler is Clang using "" did not match "(clang version)":
+nvcc fatal   : No input files specified; use option --help for more information
+Checking whether the CUDA compiler is NVIDIA using "" did not match "nvcc: NVIDIA \(R\) Cuda compiler driver":
+nvcc fatal   : No input files specified; use option --help for more information
+Checking whether the CUDA compiler is Clang using "" did not match "(clang version)":
+nvcc fatal   : No input files specified; use option --help for more information
