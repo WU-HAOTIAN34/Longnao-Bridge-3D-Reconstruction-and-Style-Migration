@@ -5,11 +5,45 @@ sudo apt-get update
 ```
 
 ```
+sudo apt-get install \
+    git \
+    cmake \
+    ninja-build \
+    build-essential \
+    libboost-program-options-dev \
+    libboost-filesystem-dev \
+    libboost-graph-dev \
+    libboost-system-dev \
+    libeigen3-dev \
+    libflann-dev \
+    libfreeimage-dev \
+    libmetis-dev \
+    libgoogle-glog-dev \
+    libgtest-dev \
+    libsqlite3-dev \
+    libglew-dev \
+    qtbase5-dev \
+    libqt5opengl5-dev \
+    libcgal-dev \
+    libceres-dev
+```
+
+```
+sudo apt-get install -y \
+    nvidia-cuda-toolkit \
+    nvidia-cuda-toolkit-gcc
+```
+
+If there are errors, try:
+
+```
 cd /root
 sudo su 
 sudo vim /etc/apt/sources.list
-Inster
+Insert button
 ```
+
+Insert the following content:
 
 ```
 deb http://archive.ubuntu.com/ubuntu/ trusty main universe restricted multiverse
@@ -54,6 +88,8 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restri
 deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
 ```
 
+then:
+
 ```
 Ese
 ：wq
@@ -63,36 +99,6 @@ Enter
 ```
 sudo apt-get update
 sudo apt upgrade
-```
-
-```
-sudo apt-get install \
-    git \
-    cmake \
-    ninja-build \
-    build-essential \
-    libboost-program-options-dev \
-    libboost-filesystem-dev \
-    libboost-graph-dev \
-    libboost-system-dev \
-    libeigen3-dev \
-    libflann-dev \
-    libfreeimage-dev \
-    libmetis-dev \
-    libgoogle-glog-dev \
-    libgtest-dev \
-    libsqlite3-dev \
-    libglew-dev \
-    qtbase5-dev \
-    libqt5opengl5-dev \
-    libcgal-dev \
-    libceres-dev
-```
-
-```
-sudo apt-get install -y \
-    nvidia-cuda-toolkit \
-    nvidia-cuda-toolkit-gcc
 ```
 
 ```
