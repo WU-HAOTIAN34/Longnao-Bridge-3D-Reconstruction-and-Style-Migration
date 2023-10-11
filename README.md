@@ -1,5 +1,111 @@
 # Longnao-Bridge-3D-Style-Migration
 
+# Configure environment
+
+## 1. Create a virtual environment
+
+```
+conda create --name nerfstudio -y python=3.8
+conda activate nerfstudio
+python -m pip install --upgrade pip
+```
+
+```
+pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+## 2. Installing tiny-cuda-nn
+
+If you clone the repository, you can simply run the last command to complete the installation
+
+```
+git clone --recursive https://github.com/nvlabs/tiny-cuda-nn
+cd tiny-cuda-nn
+pip install fmt
+pip install cutlass
+cmake . -B build
+```
+
+If cuda cannot be found, use:
+
+```
+cmake . -B build -DCMAKE_CUDA_COMPILER=/usr/local/cuda-11.4/bin/nvcc
+```
+
+You can run the following command to view cuda and installation paths:
+
+```
+nvcc –version
+which nvcc
+```
+
+```
+cmake --build build --config RelWithDebInfo -j
+cd bindings/torch
+python setup.py install
+```
+
+```
+python setup.py install
+```
+
+Check whether the installation is successful by performing the following operations:
+
+```
+python
+import tinycudann
+quit（）
+```
+
+## 3. Installing nerfstudio
+
+```
+git clone https://github.com/nerfstudio-project/nerfstudio.git
+cd nerfstudio
+pip install --upgrade pip setuptools
+pip install -e .
+```
+
+If you clone the repository, you can simply run this command to complete the installation:
+
+```
+pip install -e .
+```
+
+Installing nerfstudio automatically installs the latest version of cuda, so you need to reinstall cuda:
+
+```
+pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+## 4. Installing nerf2nerf
+
+```
+git clone https://github.com/ayaanzhaque/instruct-nerf2nerf.git
+cd instruct-nerf2nerf
+pip install --upgrade pip setuptools
+```
+
+If you clone the repository, you can simply run this command to complete the installation
+
+```
+pip install -e .
+```
+
+```
+pip uninstall functorch
+pip install functorch==0.2.1
+pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+Check whether the installation is successful by performing the following operations:
+
+```
+ns-train -h
+```
+
+## 5. Installing colmap and ffmpeg
+
 ```
 sudo apt-get update
 ```
@@ -101,48 +207,7 @@ sudo apt-get update
 sudo apt upgrade
 ```
 
-```
-conda create --name nerfstudio -y python=3.8
-conda activate nerfstudio
-python -m pip install --upgrade pip
-```
-
-```
-pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
-```
-
-```
-git clone https://github.com/colmap/colmap.git
-cd colmap
-git checkout dev
-```
-
-```
-git fetch
-git branch -a
-git checkout dev
-```
-
-```
-mkdir build
-cd build
-make
-sudo make install
-```
-
-```
-nvcc –version
-which nvcc
-sudo cmake .. -D CMAKE_CUDA_COMPILER="/usr/local/cuda/bin/nvcc" ../CMakeLists.txt -D CMAKE_CUDA_ARCHITECTURES='native'
-```
-
-```
-colmap -h
-```
-
-```
-sudo apt install ffmpeg
-```
+Installing cmake:
 
 ```
 wget https://cmake.org/files/v3.18/cmake-3.18.0-Linux-x86_64.tar.gz
@@ -152,62 +217,42 @@ sudo ln -sf /opt/cmake-3.18.0/bin/*  /usr/bin/
 cmake --version
 ```
 
-```
-git clone --recursive https://github.com/nvlabs/tiny-cuda-nn
-cd tiny-cuda-nn
-pip install fmt
-pip install cutlass
-cmake . -B build
-```
-
-Check for working CUDA compiler: /usr/bin/nvcc 
-```
-exec /usr/local/cuda/bin/nvcc "$@"
-```
+If you clone the repository, you can simply run the last command sudo make install to complete the installation:
 
 ```
-cmake . -B build -DCMAKE_CUDA_COMPILER=/usr/local/cuda-11.4/bin/nvcc
+git clone https://github.com/colmap/colmap.git
+cd colmap
+git checkout dev
 ```
 
-```
-cmake --build build --config RelWithDebInfo -j
-cd bindings/torch
-python setup.py install
-```
+if there are errors, try:
 
 ```
-python
-import tinycudann
-quit（）
+git fetch
+git branch -a
+git checkout dev
+```
+
+then:
+
+```
+mkdir build
+cd build
+make
+sudo make install
 ```
 
 ```
-git clone https://github.com/nerfstudio-project/nerfstudio.git
-cd nerfstudio
-pip install --upgrade pip setuptools
-pip install -e .
+sudo apt install ffmpeg
 ```
 
-```
-pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
-```
+Check whether the installation is successful by performing the following operations:
 
 ```
-git clone https://github.com/ayaanzhaque/instruct-nerf2nerf.git
-cd instruct-nerf2nerf
-pip install --upgrade pip setuptools
-pip install -e .
+colmap -h
 ```
 
-```
-pip uninstall functorch
-pip install functorch==0.2.1
-pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
-```
-
-```
-ns-train -h
-```
+## 6. Training
 
 ```
 ns-train nerfacto --data {PROCESSED_DATA_DIR}
