@@ -252,7 +252,17 @@ Check whether the installation is successful by performing the following operati
 colmap -h
 ```
 
-## 6. Training
+## 6. Using custom data
+
+You can get more information about nerfstudio from [here](https://docs.nerf.studio/quickstart/installation.html)
+
+```
+ns-process-data {video,images,polycam,record3d} --data {DATA_PATH} --output-dir {PROCESSED_DATA_DIR}
+```
+
+## 7. Training
+
+You can get more information from [here](https://github.com/ayaanzhaque/instruct-nerf2nerf)
 
 ```
 ns-train nerfacto --data {PROCESSED_DATA_DIR}
