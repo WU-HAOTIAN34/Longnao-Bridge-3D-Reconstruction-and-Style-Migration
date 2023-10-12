@@ -272,7 +272,14 @@ ns-train nerfacto --data {PROCESSED_DATA_DIR}
 ns-train in2n --data {PROCESSED_DATA_DIR} --load-dir {outputs/.../nerfstudio_models} --pipeline.prompt {"prompt"} --pipeline.guidance-scale 7.5 --pipeline.image-guidance-scale 1.5
 ```
 
+If you cannot connect huggingface.co, please access [here](https://huggingface.co/timbrooks/instruct-pix2pix), and try:
 
+```
+sudo apt-get install git-lfs
+git lfs clone https://huggingface.co/timbrooks/instruct-pix2pix
+```
+
+Move the cloned repository to /root/.cache/huggingface/hub/models--timbrooks--instruct-pix2pix/snapshots/31519b5cb02a7fd89b906d88731cd4d6a7bbf88d (the location where the error shows the missing file)
 
 
 
