@@ -1,5 +1,7 @@
 # Longnao-Bridge-3D-Style-Migration
 
+This is a quick toolkit for 3D style migration using nerfstudio and nerf2nerf
+
 # Configure environment
 
 ## 1. Create a virtual environment
