@@ -2,11 +2,8 @@
 
 This is a quick toolkit for 3D style migration using nerfstudio and nerf2nerf
 
-
-
 ![img](https://github.com/WuHaotian0930/Longnao-Bridge-3D-Style-Migration/blob/main/res/output6.gif)
 
- ![img](https://github.com/WuHaotian0930/Longnao-Bridge-3D-Style-Migration/blob/main/res/output1.gif)
 
 # Configure environment
 
